@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quebra-Galho</string>
+    <string name="sobre">sobre</string>
+    <string name="todo">ToDo</string>
+    <string name="outros">Outros</string>
+    <string name="action_settings">Configurações</string>
+</resources>
