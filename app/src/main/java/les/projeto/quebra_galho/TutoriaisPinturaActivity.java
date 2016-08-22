@@ -10,12 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class TutoriaisActivity extends AppCompatActivity {
+public class TutoriaisPinturaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +28,9 @@ public class TutoriaisActivity extends AppCompatActivity {
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         PagerAdapter pagerAdapter =
-                new PagerAdapter(getSupportFragmentManager(), TutoriaisActivity.this);
+                new PagerAdapter(getSupportFragmentManager(), TutoriaisPinturaActivity.this);
         viewPager.setAdapter(pagerAdapter);
+
 
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
@@ -39,6 +40,13 @@ public class TutoriaisActivity extends AppCompatActivity {
         for (int i = 0; i < tabLayout.getTabCount(); i++) {
             TabLayout.Tab tab = tabLayout.getTabAt(i);
             tab.setCustomView(pagerAdapter.getTabView(i));
+        }
+        LinearLayout tabStrip = ((LinearLayout)tabLayout.getChildAt(0));
+        tabStrip.setEnabled(false);
+        for(int i = 0; i < tabStrip.getChildCount(); i++) {
+            if (i == 1) {
+                tabStrip.getChildAt(i).setClickable(false);
+            }
         }
 
     }
@@ -52,7 +60,7 @@ public class TutoriaisActivity extends AppCompatActivity {
 
     class PagerAdapter extends FragmentPagerAdapter {
 
-        String tabTitles[] = new String[] { "Tab One", "Tab Two", "Tab Three" };
+        String tabTitles[] = new String[] {"Tutorial", "Ajuda"};
         Context context;
 
         public PagerAdapter(FragmentManager fm, Context context) {
@@ -70,11 +78,9 @@ public class TutoriaisActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    return new BlankFragment();
+                    return new TutorialFragment();
                 case 1:
-                    return new BlankFragment();
-                case 2:
-                    return new BlankFragment();
+                    return new OrcamentoFragment();
             }
 
             return null;
@@ -87,7 +93,7 @@ public class TutoriaisActivity extends AppCompatActivity {
         }
 
         public View getTabView(int position) {
-            View tab = LayoutInflater.from(TutoriaisActivity.this).inflate(R.layout.activity_tutoriais, null);
+            View tab = LayoutInflater.from(TutoriaisPinturaActivity.this).inflate(R.layout.activity_tutoriais, null);
             TextView tv = (TextView) tab.findViewById(R.id.custom_text);
             tv.setText(tabTitles[position]);
             return tab;

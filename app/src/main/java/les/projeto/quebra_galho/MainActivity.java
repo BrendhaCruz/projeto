@@ -1,14 +1,9 @@
 package les.projeto.quebra_galho;
 
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -28,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 iv1.setImageResource(R.drawable.icone);
-                Intent intent = new Intent(MainActivity.this, TutoriaisActivity.class);
+                Intent intent = new Intent(MainActivity.this, TutoriaisPinturaActivity.class);
                 startActivity(intent);
 
             }
