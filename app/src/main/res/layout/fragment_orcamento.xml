@@ -8,22 +8,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Nome"
+        android:hint="Nome"
         android:ems="10"
         android:id="@+id/editText2" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Data desejada"
+        android:hint="Data desejada"
         android:inputType="date"
         android:ems="10"
         android:id="@+id/editText3" />
 
+    /
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Problema"
+        android:hint="Descreva o Problema"
         android:id="@+id/editText" />
 
     <TextView
@@ -36,9 +38,10 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="horizontal"
+
         android:weightSum="1">
 
         <LinearLayout
@@ -49,15 +52,18 @@
 
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Pintura"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Hidráulico"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Mecâninco"/>
         </LinearLayout>
 
 
@@ -69,18 +75,31 @@
 
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Alvenaria"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Jardinagem"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Elétrico"/>
         </LinearLayout>
 
 
     </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Proposta"
+        android:layout_gravity="end"/>
 
 </LinearLayout>
