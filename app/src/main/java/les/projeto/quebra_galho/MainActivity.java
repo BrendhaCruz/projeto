@@ -1,5 +1,6 @@
 package les.projeto.quebra_galho;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,12 +10,15 @@ import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity {
+    private static Context mContext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
+
+        mContext = this.getApplicationContext();
 
         final ImageView iv1 = (ImageView) findViewById(R.id.iv1);
 
@@ -23,10 +27,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 iv1.setImageResource(R.drawable.icone);
-                Intent intent = new Intent(MainActivity.this, TutoriaisPinturaActivity.class);
+                Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
                 startActivity(intent);
 
             }
         });
     }
+    public static Context getAppContext(){
+        return mContext;
+    }
+
 }

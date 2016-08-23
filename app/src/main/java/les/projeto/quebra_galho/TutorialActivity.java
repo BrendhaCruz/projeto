@@ -10,12 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class TutoriaisPinturaActivity extends AppCompatActivity {
+public class TutorialActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,7 @@ public class TutoriaisPinturaActivity extends AppCompatActivity {
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         PagerAdapter pagerAdapter =
-                new PagerAdapter(getSupportFragmentManager(), TutoriaisPinturaActivity.this);
+                new PagerAdapter(getSupportFragmentManager(), TutorialActivity.this);
         viewPager.setAdapter(pagerAdapter);
 
 
@@ -41,13 +40,13 @@ public class TutoriaisPinturaActivity extends AppCompatActivity {
             TabLayout.Tab tab = tabLayout.getTabAt(i);
             tab.setCustomView(pagerAdapter.getTabView(i));
         }
-        LinearLayout tabStrip = ((LinearLayout)tabLayout.getChildAt(0));
-        tabStrip.setEnabled(false);
-        for(int i = 0; i < tabStrip.getChildCount(); i++) {
-            if (i == 1) {
-                tabStrip.getChildAt(i).setClickable(false);
-            }
-        }
+//        LinearLayout tabStrip = ((LinearLayout)tabLayout.getChildAt(0));
+//        tabStrip.setEnabled(false);
+//        for(int i = 0; i < tabStrip.getChildCount(); i++) {
+//            if (i == 1) {
+//                tabStrip.getChildAt(i).setClickable(false);
+//            }
+//        }
 
     }
 
@@ -93,7 +92,7 @@ public class TutoriaisPinturaActivity extends AppCompatActivity {
         }
 
         public View getTabView(int position) {
-            View tab = LayoutInflater.from(TutoriaisPinturaActivity.this).inflate(R.layout.activity_tutoriais, null);
+            View tab = LayoutInflater.from(TutorialActivity.this).inflate(R.layout.activity_tutoriais, null);
             TextView tv = (TextView) tab.findViewById(R.id.custom_text);
             tv.setText(tabTitles[position]);
             return tab;
