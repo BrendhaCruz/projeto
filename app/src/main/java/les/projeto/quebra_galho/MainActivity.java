@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
-        mContext = this.getApplicationContext();
 
         final ImageView iv1 = (ImageView) findViewById(R.id.iv1);
         final ImageView iv2 = (ImageView) findViewById(R.id.iv2);
