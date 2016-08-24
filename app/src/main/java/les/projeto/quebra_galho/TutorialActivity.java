@@ -16,7 +16,22 @@ import android.widget.TextView;
 import les.projeto.quebra_galho.Fragments.OrcamentoFragment;
 import les.projeto.quebra_galho.Fragments.TutorialFragment;
 
+
 public class TutorialActivity extends AppCompatActivity {
+
+
+    private int id;
+    private int pos;
+    private String url;
+    private String videos[][] = {
+            {"https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME"},
+            {"https://www.youtube.com/watch?v=h4CbjZP5B_A", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME"},
+            {"https://www.youtube.com/watch?v=aeuZF6a5IaY", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME"},
+            {"https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME"},
+            {"https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME"},
+            {"https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME", "https://www.youtube.com/watch?v=EYJDzqQRWME"}
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +40,13 @@ public class TutorialActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        id = getIntent().getIntExtra("id", 1);
+        pos = getIntent().getIntExtra("pos", 1);
+
+        url = getUrl(id-1, pos);
+
+
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -42,6 +64,11 @@ public class TutorialActivity extends AppCompatActivity {
             TabLayout.Tab tab = tabLayout.getTabAt(i);
             tab.setCustomView(pagerAdapter.getTabView(i));
         }
+
+    }
+
+    private String getUrl(int id, int pos) {
+        return videos[id][pos];
 
     }
 
@@ -72,7 +99,11 @@ public class TutorialActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    return new TutorialFragment();
+                    TutorialFragment frag = new TutorialFragment();
+                    Bundle b = new Bundle();
+                    b.putString("url", url);
+                    frag.setArguments(b);
+                    return frag;
                 case 1:
                     return new OrcamentoFragment();
             }

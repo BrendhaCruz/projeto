@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private String[] mDataset;
     private Context mContext;
+    private int mId;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -30,9 +31,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public MyAdapter(String[] myDataset, Context context) {
+    public MyAdapter(String[] myDataset, Context context, int id) {
         mDataset = myDataset;
         mContext = context;
+        mId = id;
     }
 
     // Create new views (invoked by the layout manager)
@@ -48,12 +50,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
         holder.mTutorial.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, TutorialActivity.class);
+                intent.putExtra("id", mId);
+                intent.putExtra("pos", position);
                 mContext.startActivity(intent);
 
             }

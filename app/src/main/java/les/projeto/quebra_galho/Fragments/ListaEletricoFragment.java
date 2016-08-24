@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import les.projeto.quebra_galho.R;
 
 public class ListaEletricoFragment extends Fragment {
+    private int id = 1;
 
     public ListaEletricoFragment() {
         // Required empty public constructor
@@ -34,7 +35,7 @@ public class ListaEletricoFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Eletrico Parede", "Pintar Porta", "Pintar Banco", "test four", "test five" , "test six" ,"test six" ,"test six" ,"test six" , "test seven"}, getActivity());
+        MyAdapter adapter = new MyAdapter(new String[]{"Eletrico Parede", "Pintar Porta", "Pintar Banco", "test four"}, getActivity(), id);
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
