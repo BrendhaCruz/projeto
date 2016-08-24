@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -17,11 +18,18 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class ListaTutorialActivity extends AppCompatActivity {
+    private int categoria;
+    private Categoria c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tutoriais_main);
+        categoria = getIntent().getIntExtra("categoria", 1);
+
+        getCategoria();
+
+        Log.d("Categoria id ", c.id + "create");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -29,7 +37,7 @@ public class ListaTutorialActivity extends AppCompatActivity {
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         PagerAdapter pagerAdapter =
-                new PagerAdapter(getSupportFragmentManager(), ListaTutorialActivity.this);
+                new PagerAdapter(getSupportFragmentManager(), c);
         viewPager.setAdapter(pagerAdapter);
 
 
@@ -45,20 +53,45 @@ public class ListaTutorialActivity extends AppCompatActivity {
 
     }
 
+    private void getCategoria() {
+        if(categoria == 1){
+            c = Categoria.ELETRICO;
+        } else if (categoria == 2){
+            c = Categoria.HIDRAULICO;
+        }
+        else if (categoria == 3){
+            c = Categoria.CARTPINTARIA;
+        }
+        else if (categoria == 4){
+            c = Categoria.MECANICO;
+        }
+        else if (categoria == 5){
+            c = Categoria.ALVENARIA;
+        }
+        else if (categoria == 6){
+            c = Categoria.DIVERSOS;
+        }
+    }
+
     @Override
     public void onResume() {
         super.onResume();
+        categoria = getIntent().getIntExtra("categoria", 1);
+        getCategoria();
+        Log.d("Categoria id ", c.id + "resume");
     }
 
 
     class PagerAdapter extends FragmentPagerAdapter {
 
-        String tabTitles[] = new String[] {"Tutoriais de Pintura"};
-        Context context;
+        String tabTitles[] = new String[] {c.titulo};
+//        Context context;
+        Categoria cat;
 
-        public PagerAdapter(FragmentManager fm, Context context) {
+        public PagerAdapter(FragmentManager fm, Categoria c) {
             super(fm);
-            this.context = context;
+//            this.context = context;
+            this.cat = c;
         }
 
         @Override
@@ -69,9 +102,19 @@ public class ListaTutorialActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
 
-            switch (position) {
-                case 0:
-                    return new ListaPinturaFragment();
+            switch (cat.id) {
+                case 1:
+                    return new ListaEletricoFragment();
+                case 2:
+                    return new ListaHidraulicoFragment();
+                case 3:
+                    return new ListaMecanicoFragment();
+                case 4:
+                    return new ListaCarpintariaFragment();
+                case 5:
+                    return new ListaAlvenariaFragment();
+                case 6:
+                    return new ListaDiversosFragment();
             }
             return null;
         }
@@ -87,6 +130,20 @@ public class ListaTutorialActivity extends AppCompatActivity {
             TextView tv = (TextView) tab.findViewById(R.id.custom_text);
             tv.setText(tabTitles[position]);
             return tab;
+        }
+
+    }
+
+    public enum Categoria{
+        ELETRICO(1, "Tutoriais Eletricos"), HIDRAULICO(2, "Tutoriais Hidraulicos"), CARTPINTARIA(3, "Tutoriais de Carpintaria"),
+        MECANICO(4, "Tutoriais Mecanicos"), ALVENARIA(5, "Tutoriais de Alvenaria"), DIVERSOS(6, "Tutoriais Diversos");
+
+        private  int id;
+        private String titulo;
+
+        private Categoria(int id, String titulo){
+            this.id = id;
+            this.titulo = titulo;
         }
 
     }

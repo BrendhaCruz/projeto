@@ -53,7 +53,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pintura"/>
+                android:text="Elétrico"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -63,7 +63,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mecâninco"/>
+                android:text="Carpintaria"/>
         </LinearLayout>
 
 
@@ -76,17 +76,17 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Mecânico"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Alvenaria"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jardinagem"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Elétrico"/>
+                android:text="Diversos"/>
         </LinearLayout>
 
 

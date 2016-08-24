@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 iv1.setImageResource(R.drawable.eletrico);
                 Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
+                intent.putExtra("categoria", 1);
                 startActivity(intent);
 
             }
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 iv2.setImageResource(R.drawable.encanador);
                 Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
+                intent.putExtra("categoria", 2);
                 startActivity(intent);
 
             }
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 iv3.setImageResource(R.drawable.marceneiro);
                 Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
+                intent.putExtra("categoria", 3);
                 startActivity(intent);
 
             }
@@ -66,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 iv4.setImageResource(R.drawable.mecanico);
                 Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
+                intent.putExtra("categoria", 4);
                 startActivity(intent);
 
             }
@@ -77,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 iv5.setImageResource(R.drawable.pedreiro);
                 Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
+                intent.putExtra("categoria", 5);
                 startActivity(intent);
 
             }
@@ -88,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 iv6.setImageResource(R.drawable.diversos);
                 Intent intent = new Intent(MainActivity.this, ListaTutorialActivity.class);
+                intent.putExtra("categoria", 6);
                 startActivity(intent);
 
             }
