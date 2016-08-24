@@ -11,8 +11,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import les.projeto.quebra_galho.Fragments.OrcamentoFragment;
+import les.projeto.quebra_galho.Fragments.TutorialFragment;
 
 public class TutorialActivity extends AppCompatActivity {
 
@@ -40,13 +42,6 @@ public class TutorialActivity extends AppCompatActivity {
             TabLayout.Tab tab = tabLayout.getTabAt(i);
             tab.setCustomView(pagerAdapter.getTabView(i));
         }
-//        LinearLayout tabStrip = ((LinearLayout)tabLayout.getChildAt(0));
-//        tabStrip.setEnabled(false);
-//        for(int i = 0; i < tabStrip.getChildCount(); i++) {
-//            if (i == 1) {
-//                tabStrip.getChildAt(i).setClickable(false);
-//            }
-//        }
 
     }
 

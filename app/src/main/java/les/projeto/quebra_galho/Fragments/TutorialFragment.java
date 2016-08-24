@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho;
+package les.projeto.quebra_galho.Fragments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-;
+;import les.projeto.quebra_galho.R;
 
 public class TutorialFragment extends Fragment {
 

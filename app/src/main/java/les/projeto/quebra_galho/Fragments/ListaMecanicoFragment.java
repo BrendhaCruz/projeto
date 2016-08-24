@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho;
+package les.projeto.quebra_galho.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,11 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-;
+;import les.projeto.quebra_galho.MyAdapter;
+import les.projeto.quebra_galho.R;
 
-public class ListaAlvenariaFragment extends Fragment {
+public class ListaMecanicoFragment extends Fragment {
 
-    public ListaAlvenariaFragment() {
+    public ListaMecanicoFragment() {
         // Required empty public constructor
     }
 
@@ -33,7 +34,7 @@ public class ListaAlvenariaFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"ALVENARIA Parede", "Pintar Porta", "Pintar Banco", "test four", "test five" , "test six" ,"test six" ,"test six" ,"test six" , "test seven"}, getActivity());
+        MyAdapter adapter = new MyAdapter(new String[]{"Mecanico Parede", "Pintar Porta", "Pintar Banco", "test four", "test five" , "test six" ,"test six" ,"test six" ,"test six" , "test seven"}, getActivity());
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());

@@ -1,7 +1,5 @@
 package les.projeto.quebra_galho;
 
-import android.app.FragmentTransaction;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -13,9 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import les.projeto.quebra_galho.Fragments.ListaAlvenariaFragment;
+import les.projeto.quebra_galho.Fragments.ListaCarpintariaFragment;
+import les.projeto.quebra_galho.Fragments.ListaDiversosFragment;
+import les.projeto.quebra_galho.Fragments.ListaEletricoFragment;
+import les.projeto.quebra_galho.Fragments.ListaHidraulicoFragment;
+import les.projeto.quebra_galho.Fragments.ListaMecanicoFragment;
 
 public class ListaTutorialActivity extends AppCompatActivity {
     private int categoria;
