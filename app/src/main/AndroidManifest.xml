@@ -16,7 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".TutorialActivity" />
-        <activity android:name=".ListaTutorialActivity"></activity>
+        <activity android:name=".ListaTutorialActivity" />
+        <activity
+            android:name=".ListaProfissionaisActivity"
+            android:label="@string/title_activity_lista_profissionais"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
