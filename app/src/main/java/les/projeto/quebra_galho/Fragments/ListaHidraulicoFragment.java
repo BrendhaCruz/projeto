@@ -35,7 +35,7 @@ public class ListaHidraulicoFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Hidraulico Parede", "Pintar Porta", "Pintar Banco", "test four"}, getActivity(), id);
+        MyAdapter adapter = new MyAdapter(new String[]{"Vazamento de torneira", "Desentupir pia banheiro", "Consertar vazamento de cano", "Como limpar piscina"}, getActivity(), id);
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());

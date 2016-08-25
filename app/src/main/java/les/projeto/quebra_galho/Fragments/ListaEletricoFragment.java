@@ -35,7 +35,7 @@ public class ListaEletricoFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Eletrico Parede", "Pintar Porta", "Pintar Banco", "test four"}, getActivity(), id);
+        MyAdapter adapter = new MyAdapter(new String[]{"Como instalar interruptor", "Como Instalar ou Trocar uma Lâmpada", "Trocar a Resistência do Chuveiro Elétrico", "Como Montar Extensão Elétrica"}, getActivity(), id);
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());

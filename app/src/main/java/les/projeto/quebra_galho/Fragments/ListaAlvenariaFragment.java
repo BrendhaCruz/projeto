@@ -35,7 +35,7 @@ public class ListaAlvenariaFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Como Fazer uma churrasqueira de alvenaria", "Pintar Porta", "Pintar Banco", "test four"}, getActivity(), id);
+        MyAdapter adapter = new MyAdapter(new String[]{"Como Fazer uma churrasqueira de alvenaria", "Como fazer textura na parede", "Como colocar cerâmica", "Como rebocar parede"}, getActivity(), id);
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());

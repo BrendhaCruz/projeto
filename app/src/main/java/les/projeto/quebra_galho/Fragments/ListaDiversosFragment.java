@@ -34,7 +34,7 @@ public class ListaDiversosFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Diversos Parede", "Pintar Porta", "Pintar Banco", "test four"}, getActivity(), id);
+        MyAdapter adapter = new MyAdapter(new String[]{"Como trocar fechadura", "Como cuidar do jardim", "Como pintar portão", "Como Detetizar ambientes"}, getActivity(), id);
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());

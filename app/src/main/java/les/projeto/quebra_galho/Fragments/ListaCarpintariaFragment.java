@@ -34,7 +34,7 @@ public class ListaCarpintariaFragment extends Fragment {
 
         RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
         rv.setHasFixedSize(true);
-        MyAdapter adapter = new MyAdapter(new String[]{"Carpintaria Parede", "Pintar Porta", "Pintar Banco", "test four"}, getActivity(), id);
+        MyAdapter adapter = new MyAdapter(new String[]{"Reforma de móveis", "Como montar guarda roupa", "Construir um banco ", "Como envernizar móveis"}, getActivity(), id);
         rv.setAdapter(adapter);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
