@@ -8,17 +8,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TutorialActivity" />
-        <activity android:name=".ListaTutorialActivity" />
+        <activity android:name=".view.TutorialActivity" />
+        <activity android:name=".view.ListaTutorialActivity" />
         <activity
-            android:name=".ListaProfissionaisActivity"
+            android:name=".view.ListaProfissionaisActivity"
             android:label="@string/title_activity_lista_profissionais"
             android:theme="@style/AppTheme"></activity>
     </application>

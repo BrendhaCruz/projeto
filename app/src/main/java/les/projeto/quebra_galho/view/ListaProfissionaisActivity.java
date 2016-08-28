@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho;
+package les.projeto.quebra_galho.view;
 
 import android.content.Context;
 import android.database.DataSetObserver;
@@ -19,6 +19,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import les.projeto.quebra_galho.R;
 
 public class ListaProfissionaisActivity extends AppCompatActivity {
 

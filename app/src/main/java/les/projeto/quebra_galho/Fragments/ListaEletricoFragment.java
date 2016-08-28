@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-;import les.projeto.quebra_galho.MyAdapter;
+;import les.projeto.quebra_galho.adapters.MyAdapter;
 import les.projeto.quebra_galho.R;
 
 public class ListaEletricoFragment extends Fragment {

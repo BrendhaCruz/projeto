@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho;
+package les.projeto.quebra_galho.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import les.projeto.quebra_galho.R;
+import les.projeto.quebra_galho.view.TutorialActivity;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private String[] mDataset;

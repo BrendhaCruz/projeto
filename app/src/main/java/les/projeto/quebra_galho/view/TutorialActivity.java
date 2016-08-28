@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho;
+package les.projeto.quebra_galho.view;
 
 import android.content.Context;
 import android.support.design.widget.TabLayout;
@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import les.projeto.quebra_galho.Fragments.OrcamentoFragment;
 import les.projeto.quebra_galho.Fragments.TutorialFragment;
+import les.projeto.quebra_galho.R;
 
 
 public class TutorialActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho;
+package les.projeto.quebra_galho.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -21,7 +21,7 @@ import les.projeto.quebra_galho.Fragments.ListaDiversosFragment;
 import les.projeto.quebra_galho.Fragments.ListaEletricoFragment;
 import les.projeto.quebra_galho.Fragments.ListaHidraulicoFragment;
 import les.projeto.quebra_galho.Fragments.ListaMecanicoFragment;
-import les.projeto.quebra_galho.Fragments.quebra_galho.*;
+import les.projeto.quebra_galho.R;
 
 public class ListaTutorialActivity extends AppCompatActivity {
     private int categoria;
@@ -63,7 +63,7 @@ public class ListaTutorialActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ListaTutorialActivity.this, ListaProfissionaisActivity.class);
+                Intent intent = new Intent(ListaTutorialActivity.this, les.projeto.quebra_galho.view.ListaProfissionaisActivity.class);
                 //intent.putExtra("categoria", 1);
                 startActivity(intent);
 
