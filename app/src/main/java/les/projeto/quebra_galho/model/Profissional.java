@@ -5,7 +5,9 @@ public class Profissional {
     private Long id;
     private String nome;
     private String telefone;
-    private String email;
+    private String endereco;
+    private String site;
+    private double nota;
     private String foto;
 
     public String getNome() {
@@ -32,12 +34,28 @@ public class Profissional {
         this.telefone = telefone;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getSite() {
+        return site;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
     }
 
     public String getFoto() {

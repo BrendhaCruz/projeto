@@ -17,10 +17,8 @@
         </activity>
         <activity android:name=".view.TutorialActivity" />
         <activity android:name=".view.ListaTutorialActivity" />
-        <activity
-            android:name=".view.ListaProfissionaisActivity"
-            android:label="@string/title_activity_lista_profissionais"
-            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".view.ListaProfissional" />
+        <activity android:name=".view.Formulario" />
     </application>
 
 </manifest>

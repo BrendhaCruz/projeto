@@ -4,5 +4,5 @@
     <string name="todo">ToDo</string>
     <string name="outros">Outros</string>
     <string name="action_settings">Configurações</string>
-    <string name="title_activity_lista_profissionais">ListaProfissionaisActivity</string>
+    <string name="lista_profissionais">ListaProfissional</string>
 </resources>

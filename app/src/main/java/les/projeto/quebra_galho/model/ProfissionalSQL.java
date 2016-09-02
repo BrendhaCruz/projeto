@@ -15,9 +15,9 @@ public class ProfissionalSQL extends SQLiteOpenHelper {
 
     private static final int VERSAO = 2;
     private static final String TABELA = "Profissional";
-    private static final String[] COLS = {"id", "nome", "telefone", "email", "foto"};
+    private static final String[] COLS = {"id", "nome", "telefone", "endereco", "site", "nota", "foto"};
 
-    public ProfissionalSQL(Context context) {
+    public ProfissionalSQL (Context context) {
         super(context, TABELA, null, VERSAO);
     }
 
@@ -28,7 +28,9 @@ public class ProfissionalSQL extends SQLiteOpenHelper {
         sb.append("(id INTEGER PRIMARY KEY, ");
         sb.append(" nome TEXT UNIQUE NOT NULL, ");
         sb.append(" telefone TEXT, ");
+        sb.append(" endereco TEXT, ");
         sb.append(" site TEXT, ");
+        sb.append(" nota REAL, ");
         sb.append(" foto TEXT);");
         db.execSQL(sb.toString());
     }
@@ -47,7 +49,9 @@ public class ProfissionalSQL extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put("nome", profissional.getNome());
         values.put("telefone", profissional.getTelefone());
-        values.put("email", profissional.getEmail());
+        values.put("endereco", profissional.getEndereco());
+        values.put("site", profissional.getSite());
+        values.put("nota", profissional.getNota());
         values.put("foto", profissional.getFoto());
 
         getWritableDatabase().insert(TABELA, null, values);
@@ -63,8 +67,10 @@ public class ProfissionalSQL extends SQLiteOpenHelper {
             profissional.setId(c.getLong(0));
             profissional.setNome(c.getString(1));
             profissional.setTelefone(c.getString(2));
-            profissional.setEmail(c.getString(3));
-            profissional.setFoto(c.getString(4));
+            profissional.setEndereco(c.getString(3));
+            profissional.setSite(c.getString(4));
+            profissional.setNota(c.getDouble(5));
+            profissional.setFoto(c.getString(6));
             profissionais.add(profissional);
         }
         c.close();

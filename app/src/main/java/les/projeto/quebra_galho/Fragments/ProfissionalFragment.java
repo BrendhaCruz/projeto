@@ -1,4 +1,4 @@
-package les.projeto.quebra_galho.Fragments.quebra_galho;
+package les.projeto.quebra_galho.Fragments;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,15 +9,16 @@ import android.view.View;
 
 import les.projeto.quebra_galho.R;
 
-public class ListaProfissionaisActivity extends AppCompatActivity {
-
+/**
+ * Created by Brendha-PC on 02/09/2016.
+ */
+public class ProfissionalFragment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_profissionais);
+        setContentView(R.layout.listaprofissional);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
     }
-
 }

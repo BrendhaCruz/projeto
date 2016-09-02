@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.ListaProfissional">
+
+    <LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/listaProfissionais"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        </ListView>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Novo"
+        android:id="@+id/btnNovo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fbfcfd"
+        android:background="#172df4"
+        android:visibility="visible"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:enabled="true"
+        />
+
+    <include layout="@layout/content_lista_profissionais" />
+
+</RelativeLayout>
