@@ -8,8 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity">
-        </activity>
+        <activity android:name=".view.MainActivity"></activity>
         <activity android:name=".view.TutorialActivity" />
         <activity android:name=".view.ListaTutorialActivity" />
         <activity android:name=".view.ListaProfissional" />
@@ -21,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.ListaServicosActivity"></activity>
     </application>
 
 </manifest>
