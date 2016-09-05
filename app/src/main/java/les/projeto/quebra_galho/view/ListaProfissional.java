@@ -4,7 +4,6 @@ package les.projeto.quebra_galho.view;
  * Created by Brendha-PC on 02/09/2016.
  */
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,12 +14,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
-import android.widget.Button;
 
 
 import les.projeto.quebra_galho.R;
 
-import java.util.Arrays;
 import java.util.List;
 
 import les.projeto.quebra_galho.model.Profissional;
@@ -69,7 +66,7 @@ public class ListaProfissional extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ListaProfissional.this, les.projeto.quebra_galho.view.Formulario.class);
+                Intent intent = new Intent(ListaProfissional.this, FormularioProfissional.class);
                 //intent.putExtra("categoria", 1);
                 startActivity(intent);
 

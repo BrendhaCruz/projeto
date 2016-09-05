@@ -2,53 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1_17565fdfc4d56995ff591f7fa8e12774e717e493.jar" />
-    </item>
-    <item
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-23.0.1_a6641525eb14fff8e288d00fd817110d405b4528.jar" />
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_e9866764f6c24b1f0056e87648e33f89a72f3a4f/classes.dex" />
     </item>
     <item
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-23.0.1_23f5db914134a7b09410ea0803e850d718290ad9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-23.0.1_df1f2c5b724aa92e8729aa1e8aa16548bdc5191a.jar" />
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_788fd03c42734f3d98f07f655db481233b5430f2/classes.dex" />
     </item>
     <item
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
-        jumboMode="false"
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="bb92105f0691b4355524a37026e0eb2b22c4f03a">
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ead0de01499ccf8fcd54844de61a11dc89b14343/classes.dex" />
+    </item>
+    <item
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="477a7d93c1450e24a7fed8a88e4ce121d5a9138f">
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_aba73ed0051b8fba1922c5a422f36b1c9fa9a1e1/classes.dex" />
+    </item>
+    <item
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\com.android.support-design-23.0.1_a55767590da317e9794e0b2b62a0467dafc26cc1.jar" />
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.1_aaa397ec26a766f121dc446c7340e59717af8d3b/classes.dex" />
     </item>
     <item
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.1"
-        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\com.android.support-cardview-v7-23.0.1_05a052499407c9182551ffcd272d58463f9922ec.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_16690fd97b6e629d23638c56ef1faddca3f43e18/classes.dex" />
     </item>
     <item
-        jar="C:\Users\Brendha-PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
+        jar="/home/andre/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1_3268f9354eda63e1bd69fb5619b04cc1a951d8b3.jar" />
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_2262b3083fbe6e312f4c186b3a06f43706c77542/classes.dex" />
+    </item>
+    <item
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_776235270afa1d51367af55a69ab0af602beb885/classes.dex" />
+    </item>
+    <item
+        jar="/home/andre/Quebra-Galho/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/home/andre/Quebra-Galho/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.0.1_82d4d5a672567546e96850a80cc58a27afbed2d3/classes.dex" />
     </item>
 
 </items>

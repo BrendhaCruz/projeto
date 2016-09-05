@@ -9,16 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.MainActivity">
+        </activity>
+        <activity android:name=".view.TutorialActivity" />
+        <activity android:name=".view.ListaTutorialActivity" />
+        <activity android:name=".view.ListaProfissional" />
+        <activity android:name=".view.FormularioProfissional" />
+        <activity android:name=".view.EscolherClienteProfissional">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.TutorialActivity" />
-        <activity android:name=".view.ListaTutorialActivity" />
-        <activity android:name=".view.ListaProfissional" />
-        <activity android:name=".view.Formulario" />
     </application>
 
 </manifest>
