@@ -31,8 +31,9 @@ public class ListaProfissional extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listaprofissional);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        // pode ser a versão do android, mas isso tá qubrando no meu celular
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         ProfissionalSQL sql = new ProfissionalSQL(this);
         List<Profissional> profissionais = sql.getLista();

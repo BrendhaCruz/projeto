@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 ;import les.projeto.quebra_galho.R;
+import les.projeto.quebra_galho.view.ListaProfissional;
 
 public class TutorialFragment extends Fragment {
 
@@ -52,6 +53,15 @@ public class TutorialFragment extends Fragment {
             }
         });
 
+
+        Button btAjuda = (Button) rootView.findViewById(R.id.btnAjuda);
+        btAjuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ListaProfissional.class);
+                startActivity(intent);
+            }
+        });
 
 
         return rootView;

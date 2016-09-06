@@ -1,5 +1,6 @@
 package les.projeto.quebra_galho.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,8 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 ;import les.projeto.quebra_galho.R;
+import les.projeto.quebra_galho.view.ListaProfissional;
 
 public class OrcamentoFragment extends Fragment {
 
@@ -36,6 +39,14 @@ public class OrcamentoFragment extends Fragment {
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
 //        rv.setLayoutManager(llm);
 
+        Button btAjuda = (Button) rootView.findViewById(R.id.btnAjuda);
+        btAjuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ListaProfissional.class);
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
 
