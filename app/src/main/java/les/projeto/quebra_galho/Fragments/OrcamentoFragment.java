@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RatingBar;
+import android.widget.Toast;
 
 ;import les.projeto.quebra_galho.R;
 import les.projeto.quebra_galho.model.ProfissionalSQL;
@@ -26,6 +27,7 @@ public class OrcamentoFragment extends Fragment {
     RadioGroup categoria1, categoria2;
 
     private Proposta proposta = new Proposta();
+
     public OrcamentoFragment() {
         // Required empty public constructor
     }
@@ -71,9 +73,9 @@ public class OrcamentoFragment extends Fragment {
         });
 
         Button botao = (Button) rootView.findViewById(R.id.btnEnviarProposta);
-        botao.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-
+        botao.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Boolean erro = false;
                 EditText nome = (EditText) rootView.findViewById(R.id.etFormName);
                 EditText data = (EditText) rootView.findViewById(R.id.etFormData);
                 EditText endereco = (EditText) rootView.findViewById(R.id.etFormEndereco);
@@ -83,21 +85,39 @@ public class OrcamentoFragment extends Fragment {
                 int chkId2 = categoria2.getCheckedRadioButtonId();
                 int realCheck = chkId1 == -1 ? chkId2 : chkId1;
                 RadioButton r = (RadioButton) rootView.findViewById(realCheck);
-
-
-
+                if (nome.getEditableText().toString() == null || nome.getEditableText().toString().trim() == "") {
+                    erro = true;
+                }
                 proposta.setNome(nome.getEditableText().toString());
+                if (data.getEditableText().toString() == null || data.getEditableText().toString().trim() == "") {
+                    erro = true;
+                }
                 proposta.setData(data.getEditableText().toString());
+                if (endereco.getEditableText().toString() == null || endereco.getEditableText().toString().trim() =="") {
+                    erro = true;
+                }
                 proposta.setEndereco(endereco.getEditableText().toString());
+                if (problema.getEditableText().toString() == null || problema.getEditableText().toString().trim() =="") {
+                    erro = true;
+                }
                 proposta.setProblema(problema.getEditableText().toString());
-                proposta.setCategoria(r.getText().toString());
+                if (r != null ) {
+                    proposta.setCategoria(r.getText().toString());
+                }else {
+                    erro = true;
+                }
 
-                PropostaSQL sql = new PropostaSQL(getActivity());
-                sql.inserir(proposta);
-                sql.close();
+                if(!erro) {
+                    PropostaSQL sql = new PropostaSQL(getActivity());
+                    sql.inserir(proposta);
+                    sql.close();
 
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getActivity(), "Por favor, preencha todos os campos" , Toast.LENGTH_LONG).show();
+
+                }
 
             }
         });
@@ -115,7 +135,6 @@ public class OrcamentoFragment extends Fragment {
     }
 
 
-
     public void fun1() {
         categoria1.setOnCheckedChangeListener(null);
         categoria1.clearCheck();
@@ -124,7 +143,7 @@ public class OrcamentoFragment extends Fragment {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 fun2();
-                Log.v("Inside fun1","fun2");
+                Log.v("Inside fun1", "fun2");
             }
         });
     }
@@ -138,7 +157,7 @@ public class OrcamentoFragment extends Fragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // TODO Auto-generated method stub
                 fun1();
-                Log.v("Inside fun2","fun1");
+                Log.v("Inside fun2", "fun1");
 
             }
         });
