@@ -23,22 +23,6 @@
         android:layout_height="wrap_content"
         />
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Cadastrar Novo"
-        android:id="@+id/btnNovo"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#fbfcfd"
-        android:background="#172df4"
-        android:visibility="visible"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:enabled="true"
-        />
-
     <include layout="@layout/content_lista_profissionais" />
 
 </RelativeLayout>

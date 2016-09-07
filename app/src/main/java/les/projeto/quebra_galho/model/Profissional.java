@@ -65,5 +65,12 @@ public class Profissional {
     public void setFoto(String foto) {
         this.foto = foto;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", Tel: " + telefone +
+                ", Endereco= " + endereco + ", site=" + site +
+                ", nota= " + nota ;
+    }
 }
 

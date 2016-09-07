@@ -60,19 +60,17 @@ public class ListaProfissional extends AppCompatActivity {
             }
         });
 
-
-        Button btn = (Button) findViewById(R.id.btnNovo);
-        btn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(ListaProfissional.this, FormularioProfissional.class);
-                //intent.putExtra("categoria", 1);
-                startActivity(intent);
-
-            }
-        });
+//        Button btn = (Button) findViewById(R.id.btnNovo);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent intent = new Intent(ListaProfissional.this, FormularioProfissional.class);
+//                startActivity(intent);
+//
+//            }
+//        });
     }
 
 

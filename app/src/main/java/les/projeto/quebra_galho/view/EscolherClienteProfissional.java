@@ -28,7 +28,6 @@ public class EscolherClienteProfissional extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(EscolherClienteProfissional.this, MainActivity.class);
-                intent.putExtra("categoria", 1);
                 startActivity(intent);
 
             }
@@ -39,7 +38,6 @@ public class EscolherClienteProfissional extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(EscolherClienteProfissional.this, ListaServicosActivity.class);
-                intent.putExtra("categoria", 2);
                 startActivity(intent);
 
             }
