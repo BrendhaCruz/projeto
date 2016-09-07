@@ -5,16 +5,27 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RatingBar;
 
 ;import les.projeto.quebra_galho.R;
+import les.projeto.quebra_galho.model.ProfissionalSQL;
+import les.projeto.quebra_galho.model.Proposta;
+import les.projeto.quebra_galho.model.PropostaSQL;
 import les.projeto.quebra_galho.view.ListaProfissional;
+import les.projeto.quebra_galho.view.MainActivity;
 
 public class OrcamentoFragment extends Fragment {
+    RadioGroup categoria1, categoria2;
 
+    private Proposta proposta = new Proposta();
     public OrcamentoFragment() {
         // Required empty public constructor
     }
@@ -28,16 +39,69 @@ public class OrcamentoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_orcamento, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_orcamento, container, false);
 
-//        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
-//        rv.setHasFixedSize(true);
-//        MyAdapter adapter = new MyAdapter(new String[]{"Pintar Parede", "Pintar Porta", "Pintar Banco", "test four", "test five" , "test six" ,"test six" ,"test six" ,"test six" , "test seven"});
-//        rv.setAdapter(adapter);
 
-        LinearLayoutManager llm = new LinearLayoutManager(getActivity());
-//        rv.setLayoutManager(llm);
+        categoria1 = (RadioGroup) rootView.findViewById(R.id.rgCategoria1);
+        categoria2 = (RadioGroup) rootView.findViewById(R.id.rgCategoria2);
+
+        categoria1.clearCheck(); // this is so we can start fresh, with no selection on both RadioGroups
+        categoria2.clearCheck();
+
+        categoria1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // TODO Auto-generated method stub
+                if (checkedId != -1) {
+                    fun2();
+                }
+            }
+        });
+
+        categoria2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // TODO Auto-generated method stub
+                if (checkedId != -1) {
+                    fun1();
+                }
+            }
+        });
+
+        Button botao = (Button) rootView.findViewById(R.id.btnEnviarProposta);
+        botao.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+                EditText nome = (EditText) rootView.findViewById(R.id.etFormName);
+                EditText data = (EditText) rootView.findViewById(R.id.etFormData);
+                EditText endereco = (EditText) rootView.findViewById(R.id.etFormEndereco);
+                EditText problema = (EditText) rootView.findViewById(R.id.etFormProblema);
+
+                int chkId1 = categoria1.getCheckedRadioButtonId();
+                int chkId2 = categoria2.getCheckedRadioButtonId();
+                int realCheck = chkId1 == -1 ? chkId2 : chkId1;
+                RadioButton r = (RadioButton) rootView.findViewById(realCheck);
+
+
+
+                proposta.setNome(nome.getEditableText().toString());
+                proposta.setData(data.getEditableText().toString());
+                proposta.setEndereco(endereco.getEditableText().toString());
+                proposta.setProblema(problema.getEditableText().toString());
+                proposta.setCategoria(r.getText().toString());
+
+                PropostaSQL sql = new PropostaSQL(getActivity());
+                sql.inserir(proposta);
+                sql.close();
+
+                Intent intent = new Intent(getActivity(), MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
         Button btAjuda = (Button) rootView.findViewById(R.id.btnAjuda);
         btAjuda.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +112,36 @@ public class OrcamentoFragment extends Fragment {
             }
         });
         return rootView;
+    }
+
+
+
+    public void fun1() {
+        categoria1.setOnCheckedChangeListener(null);
+        categoria1.clearCheck();
+        categoria1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                fun2();
+                Log.v("Inside fun1","fun2");
+            }
+        });
+    }
+
+    public void fun2() {
+        categoria2.setOnCheckedChangeListener(null);
+        categoria2.clearCheck();
+        categoria2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                // TODO Auto-generated method stub
+                fun1();
+                Log.v("Inside fun2","fun1");
+
+            }
+        });
     }
 
 }

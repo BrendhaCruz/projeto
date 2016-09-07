@@ -10,10 +10,23 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import java.util.List;
 
 import les.projeto.quebra_galho.R;
+import les.projeto.quebra_galho.model.Profissional;
+import les.projeto.quebra_galho.model.ProfissionalSQL;
+import les.projeto.quebra_galho.model.Proposta;
+import les.projeto.quebra_galho.model.PropostaSQL;
 
 public class ListaServicosActivity extends AppCompatActivity {
+
+    private ListView listaPropostas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +36,34 @@ public class ListaServicosActivity extends AppCompatActivity {
         // Sets the Toolbar to act as the ActionBar for this Activity window.
         // Make sure the toolbar exists in the activity and is not null
         setSupportActionBar(toolbar);
+
+        PropostaSQL sql = new PropostaSQL(this);
+        List<Proposta> propostas = sql.getLista();
+        sql.close();
+
+
+        ArrayAdapter<Proposta> adapter = new ArrayAdapter<Proposta>(this, android.R.layout.simple_list_item_1, propostas);
+
+        listaPropostas= (ListView) findViewById(R.id.listaPropostas);
+        listaPropostas.setAdapter(adapter);
+        listaPropostas.setClickable(true);
+        listaPropostas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> adapter, View view, int posicao, long id) {
+                Toast.makeText(ListaServicosActivity.this, "Posição selecionada: " + posicao, Toast.LENGTH_LONG).show();
+            }
+        });
+
+        listaPropostas.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+
+            public boolean onItemLongClick(AdapterView<?> adapter, View view, int posicao, long id) {
+                registerForContextMenu(listaPropostas);
+
+                return false;
+            }
+        });
+
+
+
     }
 
     @Override

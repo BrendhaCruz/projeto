@@ -101,4 +101,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed(){
+        Intent intent = new Intent(this, EscolherClienteProfissional.class);
+        startActivity(intent);
+        super.onBackPressed();  // optional depending on your needs
+    }
+
 }

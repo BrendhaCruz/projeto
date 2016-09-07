@@ -5,121 +5,135 @@
     android:orientation="vertical">
 
     <EditText
+        android:id="@+id/etFormName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:ems="10"
         android:hint="Nome"
-        android:ems="10"
-        android:id="@+id/editText2" />
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/etFormData"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:ems="10"
         android:hint="Data desejada"
-        android:inputType="date"
-        android:ems="10"
-        android:id="@+id/editText3" />
-
-    /
+        android:inputType="date" />
 
     <EditText
+        android:id="@+id/etFormEndereco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descreva o Problema"
-        android:id="@+id/editText" />
+        android:hint="Endereço" />
+
+
+    <EditText
+        android:id="@+id/etFormProblema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descreva o Problema" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selecione a categoria do problema"
-        android:textSize="20sp"
-        android:textColor="@color/cardview_dark_background"/>
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp" />
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
 
     <RadioGroup
+        android:id="@+id/rgCategoria1"
+        android:layout_weight="0.5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
+        android:orientation="vertical">
 
-        android:weightSum="1">
-
-        <LinearLayout
-            android:layout_width="0dp"
+        <RadioButton
+            android:id="@+id/rbEletrico"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.5">
+            android:text="Elétrico" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Elétrico"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hidráulico"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Carpintaria"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="0dp"
+        <RadioButton
+            android:id="@+id/rbHidraulico"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.5">
+            android:text="Hidráulico" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mecânico"/>
+        <RadioButton
+            android:id="@+id/rbCarpintaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carpintaria" />
+    </RadioGroup>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Alvenaria"/>
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Diversos"/>
-        </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rgCategoria2"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbMecanica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mecânico" />
+
+        <RadioButton
+            android:id="@+id/rbAlvenaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alvenaria" />
+
+        <RadioButton
+            android:id="@+id/rbOutros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diversos" />
 
 
     </RadioGroup>
-
+</LinearLayout>
     <View
         android:layout_width="wrap_content"
-        android:layout_height="10dp"/>
+        android:layout_height="10dp" />
 
     <Button
+        android:id="@+id/btnEnviarProposta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar Proposta"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end"
+        android:text="Enviar Proposta" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <Button
+            android:id="@+id/btnAjuda"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Ajuda especializada?"
-            android:id="@+id/btnAjuda"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:textColor="#fbfcfd"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
             android:background="#172df4"
-            android:visibility="visible"
-            android:textStyle="bold"
-            android:textAlignment="center"
             android:enabled="true"
-            android:layout_alignParentStart="false" />
+            android:text="Ajuda especializada?"
+            android:textAlignment="center"
+            android:textColor="#fbfcfd"
+            android:textStyle="bold"
+            android:visibility="visible" />
     </RelativeLayout>
 
 </LinearLayout>
