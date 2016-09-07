@@ -26,7 +26,7 @@ public class ProfissionalSQL extends SQLiteOpenHelper {
         StringBuilder sb = new StringBuilder();
         sb.append("CREATE TABLE " + TABELA + " ");
         sb.append("(id INTEGER PRIMARY KEY, ");
-        sb.append(" nome TEXT UNIQUE NOT NULL, ");
+        sb.append(" nome TEXT NOT NULL, ");
         sb.append(" telefone TEXT, ");
         sb.append(" endereco TEXT, ");
         sb.append(" site TEXT, ");

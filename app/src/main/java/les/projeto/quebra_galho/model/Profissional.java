@@ -69,8 +69,8 @@ public class Profissional {
     @Override
     public String toString() {
         return "Nome: " + nome + ", Tel: " + telefone +
-                ", Endereco= " + endereco + ", site=" + site +
-                ", nota= " + nota ;
+                ", Endereco: " + endereco + ", site: " + site +
+                ", nota: " + nota ;
     }
 }
 
