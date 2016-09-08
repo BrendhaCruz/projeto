@@ -30,7 +30,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Entrar Como:"
             android:id="@+id/textView"
-            android:textSize="50dp"
+            android:textSize="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.1"/>
 
