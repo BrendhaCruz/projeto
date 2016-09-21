@@ -16,10 +16,12 @@ import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
-;import les.projeto.quebra_galho.R;
+;import les.projeto.quebra_galho.NotifyService;
+import les.projeto.quebra_galho.R;
 import les.projeto.quebra_galho.model.ProfissionalSQL;
 import les.projeto.quebra_galho.model.Proposta;
 import les.projeto.quebra_galho.model.PropostaSQL;
+import les.projeto.quebra_galho.view.EscolherClienteProfissional;
 import les.projeto.quebra_galho.view.ListaProfissional;
 import les.projeto.quebra_galho.view.MainActivity;
 
@@ -111,6 +113,8 @@ public class OrcamentoFragment extends Fragment {
                     PropostaSQL sql = new PropostaSQL(getActivity());
                     sql.inserir(proposta);
                     sql.close();
+                    Intent intent2 = new Intent(getActivity(), NotifyService.class);
+                    getActivity().startService(intent2);
 
                     Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
