@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "991218709337",
+    "firebase_url": "https://projeto-les.firebaseio.com",
+    "project_id": "projeto-les",
+    "storage_bucket": "projeto-les.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991218709337:android:7f7b07e6c04158b4",
+        "android_client_info": {
+          "package_name": "les.projeto.quebra_galho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991218709337-k8k2cd9te6jtfff69mjuh85he5sle4tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgfuUWqX8kYUxC_mnnhKA16_wErauhWwc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
