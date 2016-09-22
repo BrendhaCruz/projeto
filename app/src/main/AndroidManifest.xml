@@ -2,10 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="les.projeto.quebra_galho">
 
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,36 +10,49 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity"
+        <activity
+            android:name=".view.MainActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".view.TutorialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.TutorialActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".view.ListaTutorialActivity" android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".view.EscolherClienteProfissional"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.ListaTutorialActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.EscolherClienteProfissional"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainProfissional"></activity>
-        <activity android:name=".view.ListaServicosActivity"></activity>
+        <activity android:name=".MainProfissional" />
+        <activity android:name=".view.ListaServicosActivity" />
         <activity
             android:name=".NewProfissionalActivity"
-            android:label="@string/title_activity_new_profissional" >
-        </activity>
+            android:label="@string/title_activity_new_profissional"/>
         <activity
             android:name=".ListProfissionalActivity"
-            android:label="@string/title_activity_list_profissional" >
+            android:label="@string/title_activity_list_profissional"/>
+
+        <service android:name=".NotifyService" />
+
+        <activity android:name=".view.LoginActivity"/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name" >
         </activity>
 
-        <service android:name=".NotifyService"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
     </application>
 
 </manifest>

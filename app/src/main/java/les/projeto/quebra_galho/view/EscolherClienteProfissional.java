@@ -1,21 +1,23 @@
 package les.projeto.quebra_galho.view;
 
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.app.TaskStackBuilder;
-import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.NotificationCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.facebook.FacebookSdk;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import les.projeto.quebra_galho.NotifyService;
 import les.projeto.quebra_galho.R;
 
 public class EscolherClienteProfissional extends AppCompatActivity {
+
+    private FirebaseAuth firebaseAuth;
+    private FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,13 @@ public class EscolherClienteProfissional extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
+        FacebookSdk.sdkInitialize(getApplicationContext());
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        if (firebaseUser == null) { // deslogado
+            loadLoginPage();
+        }
 
         final ImageView cliente = (ImageView) findViewById(R.id.cliente);
         final ImageView profissional = (ImageView) findViewById(R.id.profissional);
@@ -53,7 +62,11 @@ public class EscolherClienteProfissional extends AppCompatActivity {
 
             }
         });
+    }
 
-
+    private void loadLoginPage() {
+        Intent i = new Intent(EscolherClienteProfissional.this, LoginActivity.class);
+        startActivity(i);
+        finish();
     }
 }
