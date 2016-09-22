@@ -41,8 +41,7 @@
                     android:id="@+id/iv1"
                     android:layout_weight="0.5"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/eletrico"/>
+                    android:layout_height="wrap_content"/>
                 <ImageView
                     android:id="@+id/iv2"
                     android:layout_weight="0.5"
