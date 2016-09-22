@@ -3,8 +3,6 @@ package les.projeto.quebra_galho.Fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,16 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RatingBar;
 import android.widget.Toast;
 
 ;import les.projeto.quebra_galho.NotifyService;
 import les.projeto.quebra_galho.R;
-import les.projeto.quebra_galho.model.ProfissionalSQL;
 import les.projeto.quebra_galho.model.Proposta;
 import les.projeto.quebra_galho.model.PropostaSQL;
-import les.projeto.quebra_galho.view.EscolherClienteProfissional;
-import les.projeto.quebra_galho.view.ListaProfissional;
 import les.projeto.quebra_galho.view.MainActivity;
 
 public class OrcamentoFragment extends Fragment {
@@ -131,7 +125,7 @@ public class OrcamentoFragment extends Fragment {
         btAjuda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), ListaProfissional.class);
+                Intent intent = new Intent(getActivity(), les.projeto.quebra_galho.MainProfissional.class);
                 startActivity(intent);
             }
         });

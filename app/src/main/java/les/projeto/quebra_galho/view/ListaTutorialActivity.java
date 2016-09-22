@@ -63,7 +63,7 @@ public class ListaTutorialActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ListaTutorialActivity.this, les.projeto.quebra_galho.view.ListaProfissional.class);
+                Intent intent = new Intent(ListaTutorialActivity.this, les.projeto.quebra_galho.MainProfissional.class);
                 //intent.putExtra("categoria", 1);
                 startActivity(intent);
 
