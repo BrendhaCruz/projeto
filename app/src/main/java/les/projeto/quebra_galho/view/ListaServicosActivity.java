@@ -1,11 +1,8 @@
 package les.projeto.quebra_galho.view;
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,8 +16,6 @@ import android.widget.Toast;
 import java.util.List;
 
 import les.projeto.quebra_galho.R;
-import les.projeto.quebra_galho.model.Profissional;
-import les.projeto.quebra_galho.model.ProfissionalSQL;
 import les.projeto.quebra_galho.model.Proposta;
 import les.projeto.quebra_galho.model.PropostaSQL;
 
@@ -79,7 +74,7 @@ public class ListaServicosActivity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.miProfile:
-                Intent intent = new Intent(ListaServicosActivity.this, FormularioProfissional.class);
+                Intent intent = new Intent(ListaServicosActivity.this, les.projeto.quebra_galho.MainProfissional.class);
                 startActivity(intent);
                 //TODO
             default:
