@@ -48,7 +48,7 @@ public class EscolherClienteProfissional extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EscolherClienteProfissional.this, les.projeto.quebra_galho.MainProfissional.class);
+                Intent intent = new Intent(EscolherClienteProfissional.this, ListaServicosActivity.class);
                 startActivity(intent);
 
             }
