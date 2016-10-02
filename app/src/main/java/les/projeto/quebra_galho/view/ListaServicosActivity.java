@@ -33,7 +33,7 @@ public class ListaServicosActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         PropostaSQL sql = new PropostaSQL(this);
-        List<Proposta> propostas = sql.getLista();
+        final List<Proposta> propostas = sql.getLista();
         sql.close();
 
 
@@ -44,7 +44,15 @@ public class ListaServicosActivity extends AppCompatActivity {
         listaPropostas.setClickable(true);
         listaPropostas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> adapter, View view, int posicao, long id) {
-                Toast.makeText(ListaServicosActivity.this, "Posição selecionada: " + posicao, Toast.LENGTH_LONG).show();
+                Proposta p = propostas.get(posicao);
+                Intent intent = new Intent(ListaServicosActivity.this, PropostaActivity.class);
+                intent.putExtra("nome", p.getNome());
+                intent.putExtra("data", p.getData());
+                intent.putExtra("endereco", p.getEndereco());
+                intent.putExtra("problema", p.getProblema());
+                intent.putExtra("categoria", p.getCategoria());
+                startActivity(intent);
+//                Toast.makeText(ListaServicosActivity.this, "Posição selecionada: " + propostas.get(posicao), Toast.LENGTH_LONG).show();
             }
         });
 
