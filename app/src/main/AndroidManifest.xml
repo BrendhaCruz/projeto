@@ -42,6 +42,21 @@
             android:label="@string/title_activity_list_profissional" >
         </activity>
 
+        <activity
+            android:name=".view.Forum"
+            android:label="Forum" >
+        </activity>
+
+        <activity
+            android:name=".view.Escrever_Comentario"
+            android:label="Escrever_Comentario" >
+        </activity>
+
+        <activity
+            android:name=".view.Teste"
+            android:label="Teste" >
+        </activity>
+
         <service android:name=".NotifyService"/>
     </application>
 

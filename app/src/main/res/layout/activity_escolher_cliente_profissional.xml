@@ -56,4 +56,13 @@
 
 
     </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btn_forum"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>
