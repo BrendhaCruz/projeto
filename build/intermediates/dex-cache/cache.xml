@@ -3,84 +3,84 @@
 
     <item
         is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_96a51778844535cc3108d4b38b1d19d6cd69d87d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_4c69efe5a8c38ef0fc59c6137f234f499ccf2cf1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9f97fc90c1e0cc0919fb5d889cf505265093dd88">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fd8bb7e2f00e9fea3598d75525d48d4ff462cb6b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_d5dacb72aaba7d32a7c9707d6e5634e07e183384/classes.dex" />
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.1_df1f2c5b724aa92e8729aa1e8aa16548bdc5191a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.1_23f5db914134a7b09410ea0803e850d718290ad9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.0.1_f21d0e07457fd84b2a9410b5461e0cde7fb99439/classes.dex" />
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.0.1_05a052499407c9182551ffcd272d58463f9922ec\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.1"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.1_50eaa2c6298c121934f21185d748fa1edb06ebb1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_e51fae8d28fbef0f92cb6cb8b839247dcd46380c/classes.dex" />
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.0.1_a6641525eb14fff8e288d00fd817110d405b4528\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/andre/projeto/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
-        sha1="ea48a34d14cd2add1279206ed3dfa78313c6a587">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d41539a7146f27528aa05c59831cae9f8e602311/classes.dex" />
+        sha1="5cfba5087c57937ffe01421d990b0761f80ffd7a">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9016116da97730c17b8e810862a7df867f8a59f4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/andre/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.1_17565fdfc4d56995ff591f7fa8e12774e717e493\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.1_a55767590da317e9794e0b2b62a0467dafc26cc1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f6154f43e19feff3b3275beba4e0ba2f77cb8cf">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_db2c572d9bd11b7a8910b4472333a10cd0e862c6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Brendha-PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/andre/projeto/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_d8a3f24712c93a472e8898817f48ca8ddf109157/classes.dex" />
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.1_3268f9354eda63e1bd69fb5619b04cc1a951d8b3\classes.dex" />
     </item>
 
 </items>

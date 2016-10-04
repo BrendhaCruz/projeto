@@ -14,8 +14,8 @@ import android.widget.Toast;
 public class NewProfissionalActivity extends Activity {
     private Profissional profissional = new Profissional();
     private EditText nomeEt;
-    private EditText emailEt;
-    private EditText senhaEt;
+    private EditText sobrenomeEt;
+    private EditText categoriaEt;
     private Button salvarBt;
     private Button editarBt;
 
@@ -26,8 +26,8 @@ public class NewProfissionalActivity extends Activity {
         setContentView(R.layout.activity_new_profissional);
 
         nomeEt = (EditText) findViewById(R.id.nome);
-        emailEt = (EditText) findViewById(R.id.email);
-        senhaEt = (EditText) findViewById(R.id.senha);
+        sobrenomeEt = (EditText) findViewById(R.id.sobrenome);
+        categoriaEt = (EditText) findViewById(R.id.categoria);
         salvarBt = (Button) findViewById(R.id.button1);
         editarBt = (Button) findViewById(R.id.button2);
 
@@ -39,12 +39,12 @@ public class NewProfissionalActivity extends Activity {
 
                 profissional.setId(bundle.getLong("id"));
                 profissional.setNome(bundle.getString("nome"));
-                profissional.setEmail(bundle.getString("email"));
+                profissional.setSobrenome(bundle.getString("sobrenome"));
 
                 nomeEt.setText(profissional.getNome());
-                emailEt.setText(profissional.getEmail());
+                sobrenomeEt.setText(profissional.getSobrenome());
 
-                senhaEt.setVisibility(View.GONE);
+                categoriaEt.setVisibility(View.GONE);
                 salvarBt.setVisibility(View.GONE);
                 editarBt.setVisibility(View.VISIBLE);
             }
@@ -54,8 +54,8 @@ public class NewProfissionalActivity extends Activity {
 
     public void salvarProfissional(View view){
         profissional.setNome(nomeEt.getText().toString());
-        profissional.setEmail(emailEt.getText().toString());
-        profissional.setSenha(senhaEt.getText().toString());
+        profissional.setSobrenome(sobrenomeEt.getText().toString());
+        profissional.setCategoria(categoriaEt.getText().toString());
 
         BD bd = new BD(this);
         bd.inserir(profissional);
@@ -66,7 +66,7 @@ public class NewProfissionalActivity extends Activity {
 
     public void editarProfissional(View view){
         profissional.setNome(nomeEt.getText().toString());
-        profissional.setEmail(emailEt.getText().toString());
+        profissional.setSobrenome(sobrenomeEt.getText().toString());
 
         BD bd = new BD(this);
         bd.atualizar(profissional);
