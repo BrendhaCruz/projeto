@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 24
     buildToolsVersion "23.0.1"
 
     defaultConfig {
@@ -17,10 +17,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled true
+    }
 }
 
 ext {
-    supportLibraryVersion = '23.1.1'
+    supportLibraryVersion = '24.2.1'
     firebaseVersion = '9.4.0'
 }
 
@@ -34,6 +37,7 @@ dependencies {
 
     compile 'com.facebook.android:facebook-android-sdk:4.9.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.nitrico.lastadapter:lastadapter:1.2.3'
 
     compile "com.android.support:support-v4:${supportLibraryVersion}"
     compile "com.android.support:appcompat-v7:${supportLibraryVersion}"

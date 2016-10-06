@@ -10,14 +10,12 @@ import android.widget.ImageView;
 import com.facebook.FacebookSdk;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
 
 import les.projeto.quebra_galho.NotifyService;
 import les.projeto.quebra_galho.R;
 
 public class EscolherClienteProfissional extends AppCompatActivity {
-
-    private FirebaseAuth firebaseAuth;
-    private FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +26,9 @@ public class EscolherClienteProfissional extends AppCompatActivity {
 
         FacebookSdk.sdkInitialize(getApplicationContext());
 
-        firebaseAuth = FirebaseAuth.getInstance();
-        firebaseUser = firebaseAuth.getCurrentUser();
-        if (firebaseUser == null) { // deslogado
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) { // deslogado
             loadLoginPage();
         }
 
