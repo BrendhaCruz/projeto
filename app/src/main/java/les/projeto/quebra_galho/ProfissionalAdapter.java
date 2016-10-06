@@ -59,7 +59,7 @@ public class ProfissionalAdapter extends BaseAdapter {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, NewProfissionalActivity.class);
                 intent.putExtra("nome", list.get(auxPosition).getNome());
-                intent.putExtra("email", list.get(auxPosition).getEmail());
+                intent.putExtra("sobrenome", list.get(auxPosition).getSobrenome());
                 intent.putExtra("id", list.get(auxPosition).getId());
                 context.startActivity(intent);
             }

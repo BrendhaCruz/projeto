@@ -3,6 +3,9 @@
     package="les.projeto.quebra_galho">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -53,6 +56,10 @@
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
+
+        <service android:name=".NotifyService" />
+
+        <activity android:name=".view.PropostaActivity" />
     </application>
 
 </manifest>

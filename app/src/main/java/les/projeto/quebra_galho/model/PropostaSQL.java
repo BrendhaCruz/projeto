@@ -12,7 +12,7 @@ import java.util.List;
 public class PropostaSQL extends SQLiteOpenHelper {
 
     private static final int VERSAO = 2;
-    private static final String TABELA = "Proposta";
+    private static final String TABELA = "PropostaActivity";
     private static final String[] COLS = {"id", "nome", "data", "endereco", "problema", "categoria"};
 
     public PropostaSQL(Context context) {
