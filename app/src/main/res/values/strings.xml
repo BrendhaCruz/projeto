@@ -7,4 +7,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_new_profissional">NewProfissionalActivity</string>
     <string name="title_activity_list_profissional">ListProfissionalActivity</string>
+    <string name="title_activity_spash_screen">SpashScreen</string>
 </resources>
