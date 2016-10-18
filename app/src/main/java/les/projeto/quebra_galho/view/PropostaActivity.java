@@ -1,10 +1,15 @@
 package les.projeto.quebra_galho.view;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import les.projeto.quebra_galho.ChatFake;
+import les.projeto.quebra_galho.ListProfissionalActivity;
 import les.projeto.quebra_galho.R;
 
 public class PropostaActivity extends AppCompatActivity {
@@ -39,8 +44,16 @@ public class PropostaActivity extends AppCompatActivity {
         tvProblema.setText(problema);
         tvCategoria.setText(categoria);
 
-
-
+        Button btnAceitarProposta = (Button) findViewById(R.id.btnAceitarProposta);
+        btnAceitarProposta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PropostaActivity.this, ChatFake.class);
+                startActivity(intent);
+            }
+        });
 
     }
+
+
 }

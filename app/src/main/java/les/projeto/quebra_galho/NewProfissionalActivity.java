@@ -60,7 +60,7 @@ public class NewProfissionalActivity extends Activity {
         BD bd = new BD(this);
         bd.inserir(profissional);
 
-        Toast.makeText(this, "profissional inserido com sucesso!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Profissional inserido com sucesso!", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -71,7 +71,7 @@ public class NewProfissionalActivity extends Activity {
         BD bd = new BD(this);
         bd.atualizar(profissional);
 
-        Toast.makeText(this, "profissional \""+profissional.getNome()+"\" atuailizado com sucesso.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "telachatprovisoria \""+profissional.getNome()+"\" atuailizado com sucesso.", Toast.LENGTH_SHORT).show();
     }
 
 }

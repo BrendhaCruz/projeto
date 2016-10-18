@@ -15,13 +15,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Editar"
-        android:onClick="editar" />
+        android:onClick="editar"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:id="@+id/deletar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deletar"
-        android:onClick="deletar" />
+        android:onClick="deletar"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
 </LinearLayout>

@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
@@ -45,7 +46,8 @@
         android:layout_height="wrap_content"
         android:text="Salvar profissional"
         android:layout_gravity="right"
-        android:onClick="salvarProfissional" />
+        android:onClick="salvarProfissional"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:id="@+id/button2"
@@ -55,5 +57,16 @@
         android:layout_gravity="right"
         android:onClick="editarProfissional"
         android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/quebra_galho_icon"
+        android:id="@+id/imageView3" />
 
 </LinearLayout>

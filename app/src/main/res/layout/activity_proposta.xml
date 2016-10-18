@@ -93,7 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Entrar Em Contato" />
+        android:text="Entrar Em Contato"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -15,7 +16,8 @@
         android:layout_height="wrap_content"
         android:text="Assistir Tutorial"
         android:id="@+id/btnVideo"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,12 +31,23 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:textColor="#fbfcfd"
-            android:background="#172df4"
+            android:background="#7CFC00"
             android:visibility="visible"
             android:textStyle="bold"
             android:textAlignment="center"
             android:enabled="true"
             android:layout_alignParentStart="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/quebra_galho_icon"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:id="@+id/imageView6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 </LinearLayout>

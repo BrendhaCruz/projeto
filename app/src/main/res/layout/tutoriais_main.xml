@@ -30,7 +30,7 @@
         android:elevation="6dp"
         app:tabTextColor="#d3d3d3"
         app:tabSelectedTextColor="#ffffff"
-        app:tabIndicatorColor="#ff00ff"
+        app:tabIndicatorColor="#7CFC00"
         android:minHeight="?attr/actionBarSize"
         />
 
@@ -50,7 +50,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textColor="#fbfcfd"
-        android:background="#172df4"
+        android:background="#7CFC00"
         android:visibility="visible"
         android:textStyle="bold"
         android:textAlignment="center"

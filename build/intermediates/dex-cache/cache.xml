@@ -2,85 +2,391 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.0.1_df1f2c5b724aa92e8729aa1e8aa16548bdc5191a\classes.dex" />
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.4.0_069ee59e6262f1b275abcf2e94d3bb78ef3431c6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.0.1_23f5db914134a7b09410ea0803e850d718290ad9\classes.dex" />
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_268670f1040da6813b22a67804b09d14f36795bc.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.0.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.0.4\9c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0\kotlin-stdlib-1.0.4.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.0.1_05a052499407c9182551ffcd272d58463f9922ec\classes.dex" />
+        sha1="09c8d1a5d2eea3c9a7f58baa1a2fa11498cb41d0">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-1.0.4_d6ff9c005acc57322308040492746afddfafda93.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.0.1_a6641525eb14fff8e288d00fd817110d405b4528\classes.dex" />
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.4.0_2a6f0e3aad31bf0ed388d94346229ca8d81b8efb.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5cfba5087c57937ffe01421d990b0761f80ffd7a">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9016116da97730c17b8e810862a7df867f8a59f4\classes.dex" />
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_574d36306d7047e050c46303fe073006bb74aae8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.1_17565fdfc4d56995ff591f7fa8e12774e717e493\classes.dex" />
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_b11dc740b984ca711aa379e68b2c59ff8c4637bd.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.0.1_a55767590da317e9794e0b2b62a0467dafc26cc1\classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_fe16f7a22ec064c1c6cca359d7ef856493b9f6be.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="3f6154f43e19feff3b3275beba4e0ba2f77cb8cf">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_db2c572d9bd11b7a8910b4472333a10cd0e862c6\classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_3ee10c7333c6707c47f2fa71b0ef9266021d4786.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Brendha-PC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.0.1_3268f9354eda63e1bd69fb5619b04cc1a951d8b3\classes.dex" />
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_54aa507317444b14b749857e913c81a3181fd489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c8f5d56f8f8a287c95e02c542baade138a378048">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-common-9.4.0_04937896e4ef563783b6221cf2657cdd113dd2de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-module-9.4.0_8798b7b3bd544b39565c09a2d8802aec2c068f70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.4.0_27f6ae7502fd559423a2b91a3f002f606ef04cb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_57c09a0e10d1d69db0f2602737b60374d60356e4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.github.nitrico.lastadapter\lastadapter\1.2.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ed4579d5af464ba0653f07a2b3c2cadf51bb904">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.github.nitrico.lastadapter-lastadapter-1.2.3_51e183b0093b72e5d2064b0d76fd22e0f211073e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ddeaa9ce69f22ab0f48867d147514cea84d31873.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.4.0_0125373289c14b1a1be1f9263987f9f22fa32cd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-multidex-1.0.1_1cc0b85642e6a528deb4e270aa15790ddb9b5e44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_d070c1f6eae91735aa0252e85cebed33d1effebb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.databinding-adapters-1.2.1_683757cba56078153a0490d78cc87ea8a5c20d7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.4.0_9d65d1186ca853cd86f8d28482ac49fa3a786f1a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.4.0_93caa36dd5727f5787f14371573e414022477fc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-common-9.4.0_33bbca11b1c80500719ee4f2a75cc90aca7b049a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="98e97da89d4df8e2f6eba63498d3d46a587372f2">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-9.4.0_ae754cb32d18cef56a882f9312afbbea9444d7da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.3.0\8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c\bolts-tasks-1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.3.0_ff5c7b4929a15b3f2b0276bc53c140584afffe44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.4.0_381a9664d4ee4bd6e40ae74c4d537d78e1547ff5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_4cd0452a17d63325a926f91a0fb9b248bdc64a4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.2.1_18d953148039d0bfc742067642adc45f50eaf020.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_b40a19a2572d42b8bd9ecd5a74c1596d95d98e66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_3842b9b94f5cecb41d482435d2c107bf197516c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\android\databinding\baseLibrary\2.2.0\baseLibrary-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e1d81f36ef9a5803689b3e888eb93a8759a17be0">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\baseLibrary-2.2.0_c6d3acab46ce58625baa05fe618d43ec962f177b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-runtime\1.0.4\8e25da5e31669f5acf514bdd99b94ff5c7003b3b\kotlin-runtime-1.0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8e25da5e31669f5acf514bdd99b94ff5c7003b3b">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\kotlin-runtime-1.0.4_b4f3b36501408f66524961ea9f94d5283a85c478.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.4.0_e2c2ec1513ec67f15a0279494fb61441671bbb5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.9.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5c9b831cf63629b8b3873959e52515340484a880">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.9.0_8fdc0052d6eff89ce26877ac035898a114412aa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.3.0\bc535105332645408ef5f1380215cc954b842178\bolts-applinks-1.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bc535105332645408ef5f1380215cc954b842178">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.3.0_80141aef64b681df93eeca124c723032dcbab319.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.4.0_4cfbf9d0b181991f492bd80622e0383b420da69d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.databinding-library-1.2.1_153c110b52595dc6dd0e6e415ed8ebd1455a081a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_460a6bd6d3f066e2606419fed290ae967f47b286.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_4710137407ff078d5eb413f3353e63a6de97eada.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_1b34dbd483759e13de357cd18216bd6cbb3f5706.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.4.0_82f712ec9509073a8860b482fa658a38baf2cd9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_1210b2b430c5f811c6f1509036d942fc430113c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_16ec927e0180324c6dc4e3c77f3007f451f5fddb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Brendha-PC\workspace\projeto\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_bcfeb993289736c07328f532d15e09ea4e7b75a7.jar" />
     </item>
 
 </items>

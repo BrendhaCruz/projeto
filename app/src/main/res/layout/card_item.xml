@@ -31,7 +31,7 @@
                 android:layout_weight="0.20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="descrição......">
+                android:text=" ">
             </TextView>
 
             <Button
@@ -39,7 +39,8 @@
                 android:layout_weight="0.30"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tutorial"/>
+                android:text="Tutorial"
+                style="@style/Widget.AppCompat.Button.Colored" />
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
