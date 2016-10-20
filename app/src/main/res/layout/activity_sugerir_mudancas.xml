@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:backgroundTintMode="multiply">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nos ajude a mellhorar! Precisamos de sua opinião sobre o nosso serviço prestado, como anda nosso serviço?"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Qualidade do serviço desempenhado"
+        android:id="@+id/textView3"
+        android:layout_gravity="center" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar_desempenho"
+        android:layout_gravity="center"
+        android:progressTint="#7CFC00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Demora na conclusão dos serviços"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar_tempo"
+        android:layout_gravity="center"
+        android:progressTint="#7CFC00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Atendimento de nossos funcionários"
+        android:id="@+id/textView5"
+        android:layout_gravity="center" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar_atendimento"
+        android:layout_gravity="center"
+        android:progressTint="#7CFC00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Qualidade da plataforma Quebra Galho"
+        android:id="@+id/textView6"
+        android:layout_gravity="center" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar_plataforma"
+        android:layout_gravity="center"
+        android:progressTint="#7CFC00" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:autoText="true"
+        android:layout_weight="0.32"
+        android:editable="true"
+        android:hint="Se desejar, deixe aqui sua sugestão para a melhoria do serviço, tomaremos medidas baseadas nessas informações" />
+
+    <Button
+        android:id="@+id/enviar_segestoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:background="#7CFC00"
+        android:enabled="true"
+        android:text="enviar sugestões"
+        android:textAlignment="center"
+        android:textColor="#fbfcfd"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

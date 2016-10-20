@@ -52,6 +52,10 @@
             android:label="@string/title_activity_list_profissional" >
         </activity>
 
+        <activity
+            android:name=".view.SugerirMudancas">
+        </activity>
+
         <service android:name=".NotifyService" />
 
         <activity android:name=".view.LoginActivity" />

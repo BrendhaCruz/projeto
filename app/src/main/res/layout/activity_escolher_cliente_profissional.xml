@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".view.MainActivity">
 
     <android.support.v7.widget.Toolbar
@@ -34,6 +35,11 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="48dp" />
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.03" />
+
         <ImageView
             android:id="@+id/cliente"
             android:layout_width="wrap_content"
@@ -49,11 +55,24 @@
             android:layout_weight="0.35"
             android:src="@drawable/profissional" />
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.2" />
-
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/mudancas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="false"
+        android:background="#7CFC00"
+        android:enabled="true"
+        android:text="Sugerir mudanças?"
+        android:textAlignment="center"
+        android:textColor="#fbfcfd"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
 </LinearLayout>

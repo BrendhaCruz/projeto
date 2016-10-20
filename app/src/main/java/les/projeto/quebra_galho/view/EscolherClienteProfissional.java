@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.facebook.FacebookSdk;
@@ -34,7 +35,16 @@ public class EscolherClienteProfissional extends AppCompatActivity {
 
         final ImageView cliente = (ImageView) findViewById(R.id.cliente);
         final ImageView profissional = (ImageView) findViewById(R.id.profissional);
+        final Button sugerir_mudancas = (Button)findViewById(R.id.mudancas);
 
+        sugerir_mudancas.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EscolherClienteProfissional.this, SugerirMudancas.class);
+                startActivity(intent);
+            }
+        });
 
         cliente.setOnClickListener(new View.OnClickListener() {
 
