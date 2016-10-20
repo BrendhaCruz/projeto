@@ -50,12 +50,16 @@ public class ProfissionalAdapter extends BaseAdapter {
         final LinearLayout layout = (LinearLayout) inflater.inflate(R.layout.profissional, null);
 
         TextView tvNome = (TextView) layout.findViewById(R.id.nome);
+        TextView tvCategoria = (TextView) layout.findViewById(R.id.categoria);
+        TextView tvDescricao = (TextView) layout.findViewById(R.id.descricao);
         TextView tvEmail = (TextView) layout.findViewById(R.id.email);
-        TextView tvSenha = (TextView) layout.findViewById(R.id.senha);
+        TextView tvTelefone = (TextView) layout.findViewById(R.id.telefone);
 
         tvNome.setText(list.get(position).getNome());
+        tvCategoria.setText(list.get(position).getCategoria());
+        tvDescricao.setText(list.get(position).getDescricao());
         tvEmail.setText(list.get(position).getEmail());
-        tvSenha.setText(list.get(position).getSenha());
+        tvTelefone.setText(list.get(position).getTelefone());
 
         Button editarBt = (Button) layout.findViewById(R.id.editar);
         editarBt.setOnClickListener(new Button.OnClickListener() {
@@ -63,8 +67,10 @@ public class ProfissionalAdapter extends BaseAdapter {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, NewProfissionalActivity.class);
                 intent.putExtra("nome", list.get(auxPosition).getNome());
+                intent.putExtra("categoria", list.get(auxPosition).getCategoria());
+                intent.putExtra("descricao", list.get(auxPosition).getDescricao());
                 intent.putExtra("email", list.get(auxPosition).getEmail());
-                intent.putExtra("senha", list.get(auxPosition).getSenha());
+                intent.putExtra("telefone", list.get(auxPosition).getTelefone());
                 intent.putExtra("id", list.get(auxPosition).getId());
                 context.startActivity(intent);
             }

@@ -28,6 +28,20 @@
     </EditText>
 
     <EditText
+        android:id="@+id/categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="*Categoria de trabalho" />
+
+    <EditText
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="*Descricao de trabalho" />
+
+    <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,12 +50,11 @@
         android:hint="*Email" />
 
     <EditText
-        android:id="@+id/senha"
+        android:id="@+id/telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPassword"
-        android:hint="*Senha"
+        android:hint="*Telefone/WhatsAap"
         android:layout_weight="0.10" />
 
     <Button

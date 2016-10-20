@@ -14,8 +14,10 @@ import android.widget.Toast;
 public class NewProfissionalActivity extends Activity {
     private Profissional profissional = new Profissional();
     private EditText nomeEt;
+    private EditText categoriaEt;
+    private EditText descricaoEt;
     private EditText emailEt;
-    private EditText senhaEt;
+    private EditText telefoneEt;
     private Button salvarBt;
     private Button editarBt;
 
@@ -26,8 +28,10 @@ public class NewProfissionalActivity extends Activity {
         setContentView(R.layout.activity_new_profissional);
 
         nomeEt = (EditText) findViewById(R.id.nome);
+        categoriaEt = (EditText) findViewById(R.id.categoria);
+        descricaoEt = (EditText) findViewById(R.id.descricao);
         emailEt = (EditText) findViewById(R.id.email);
-        senhaEt = (EditText) findViewById(R.id.senha);
+        telefoneEt = (EditText) findViewById(R.id.telefone);
         salvarBt = (Button) findViewById(R.id.button1);
         editarBt = (Button) findViewById(R.id.button2);
 
@@ -39,13 +43,17 @@ public class NewProfissionalActivity extends Activity {
 
                 profissional.setId(bundle.getLong("id"));
                 profissional.setNome(bundle.getString("nome"));
+                profissional.setCategoria(bundle.getString("categoria"));
+                profissional.setDescricao(bundle.getString("descricao"));
                 profissional.setEmail(bundle.getString("email"));
-                profissional.setSenha(bundle.getString("senha"));
+                profissional.setTelefone(bundle.getString("telefone"));
 
 
                 nomeEt.setText(profissional.getNome());
+                categoriaEt.setText(profissional.getCategoria());
+                descricaoEt.setText(profissional.getDescricao());
                 emailEt.setText(profissional.getEmail());
-                senhaEt.setText(profissional.getSenha());
+                telefoneEt.setText(profissional.getTelefone());
 
                 salvarBt.setVisibility(View.GONE);
                 editarBt.setVisibility(View.VISIBLE);
@@ -56,8 +64,10 @@ public class NewProfissionalActivity extends Activity {
 
     public void salvarProfissional(View view){
         profissional.setNome(nomeEt.getText().toString());
+        profissional.setCategoria(categoriaEt.getText().toString());
+        profissional.setDescricao(descricaoEt.getText().toString());
         profissional.setEmail(emailEt.getText().toString());
-        profissional.setSenha(senhaEt.getText().toString());
+        profissional.setTelefone(telefoneEt.getText().toString());
 
         BD bd = new BD(this);
         bd.inserir(profissional);
@@ -68,8 +78,10 @@ public class NewProfissionalActivity extends Activity {
 
     public void editarProfissional(View view){
         profissional.setNome(nomeEt.getText().toString());
+        profissional.setCategoria(categoriaEt.getText().toString());
+        profissional.setDescricao(descricaoEt.getText().toString());
         profissional.setEmail(emailEt.getText().toString());
-        profissional.setSenha(senhaEt.getText().toString());
+        profissional.setTelefone(telefoneEt.getText().toString());
 
 
         BD bd = new BD(this);

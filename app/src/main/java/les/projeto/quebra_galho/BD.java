@@ -23,8 +23,10 @@ public class BD {
     public void inserir(Profissional profissional){
         ContentValues valores = new ContentValues();
         valores.put("nome", profissional.getNome());
+        valores.put("categoria", profissional.getCategoria());
+        valores.put("descricao", profissional.getDescricao());
         valores.put("email", profissional.getEmail());
-        valores.put("senha", profissional.getSenha());
+        valores.put("telefone", profissional.getTelefone());
 
         bd.insert("profissional", null, valores);
     }
@@ -33,8 +35,10 @@ public class BD {
     public void atualizar(Profissional profissional){
         ContentValues valores = new ContentValues();
         valores.put("nome", profissional.getNome());
+        valores.put("categoria", profissional.getCategoria());
+        valores.put("descricao", profissional.getDescricao());
         valores.put("email", profissional.getEmail());
-        valores.put("senha", profissional.getSenha());
+        valores.put("telefone", profissional.getTelefone());
 
 
         bd.update("profissional", valores, "_id = ?", new String[]{""+profissional.getId()});
@@ -48,7 +52,7 @@ public class BD {
 
     public List<Profissional> buscar(){
         List<Profissional> list = new ArrayList<Profissional>();
-        String[] colunas = new String[]{"_id", "nome", "email", "senha"};
+        String[] colunas = new String[]{"_id", "nome", "categoria", "descricao", "email", "telefone"};
 
         Cursor cursor = bd.query("profissional", colunas, null, null, null, null, "nome ASC");
 
@@ -60,8 +64,10 @@ public class BD {
                 Profissional p = new Profissional();
                 p.setId(cursor.getLong(0));
                 p.setNome(cursor.getString(1));
-                p.setEmail(cursor.getString(2));
-                p.setSenha(cursor.getString(3));
+                p.setCategoria(cursor.getString(2));
+                p.setDescricao(cursor.getString(3));
+                p.setEmail(cursor.getString(4));
+                p.setTelefone(cursor.getString(5));
                 list.add(p);
 
             }while(cursor.moveToNext());
