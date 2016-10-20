@@ -9,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".NewProfissionalActivity" >
+    tools:context=".NewProfissionalActivity"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,18 +28,21 @@
     </EditText>
 
     <EditText
-        android:id="@+id/sobrenome"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="*Sobrenome" />
+        android:inputType="textEmailAddress"
+        android:hint="*Email" />
 
     <EditText
-        android:id="@+id/categoria"
+        android:id="@+id/senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="*Categoria" />
+        android:inputType="textPassword"
+        android:hint="*Senha"
+        android:layout_weight="0.10" />
 
     <Button
         android:id="@+id/button1"
@@ -49,6 +53,13 @@
         android:onClick="salvarProfissional"
         style="@style/Widget.AppCompat.Button.Colored" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        app:srcCompat="@drawable/quebra_galho_icon"
+        android:id="@+id/imageView2"
+        android:layout_weight="0.17" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
@@ -56,17 +67,7 @@
         android:text="Editar Profissional"
         android:layout_gravity="right"
         android:onClick="editarProfissional"
-        android:visibility="gone" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/quebra_galho_icon"
-        android:id="@+id/imageView3" />
+        android:visibility="gone"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
 </LinearLayout>

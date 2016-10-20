@@ -47,15 +47,45 @@ public class ProfissionalAdapter extends BaseAdapter {
         final int auxPosition = position;
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final LinearLayout layout = (LinearLayout) inflater.inflate(R.layout.telachatprovisoria, null);
+        final LinearLayout layout = (LinearLayout) inflater.inflate(R.layout.profissional, null);
 
-        TextView tv = (TextView) layout.findViewById(R.id.nome);
-        tv.setText(list.get(position).getNome());
+        TextView tvNome = (TextView) layout.findViewById(R.id.nome);
+        TextView tvEmail = (TextView) layout.findViewById(R.id.email);
+        TextView tvSenha = (TextView) layout.findViewById(R.id.senha);
 
+        tvNome.setText(list.get(position).getNome());
+        tvEmail.setText(list.get(position).getEmail());
+        tvSenha.setText(list.get(position).getSenha());
+
+        Button editarBt = (Button) layout.findViewById(R.id.editar);
+        editarBt.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, NewProfissionalActivity.class);
+                intent.putExtra("nome", list.get(auxPosition).getNome());
+                intent.putExtra("email", list.get(auxPosition).getEmail());
+                intent.putExtra("senha", list.get(auxPosition).getSenha());
+                intent.putExtra("id", list.get(auxPosition).getId());
+                context.startActivity(intent);
+            }
+        });
+
+        Button deletarBt = (Button) layout.findViewById(R.id.deletar);
+        deletarBt.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                BD bd = new BD(context);
+                bd.deletar(list.get(auxPosition));
+
+                layout.setVisibility(View.GONE);
+            }
+        });
 
         return layout;
+
+
+
     }
 
 }
-
 

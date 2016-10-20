@@ -5,8 +5,8 @@ package les.projeto.quebra_galho;
  */
 public class Profissional {
     private String nome;
-    private String sobrenome;
-    private String categoria;
+    private String email;
+    private String senha;
     private long id;
 
 
@@ -16,17 +16,17 @@ public class Profissional {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getSobrenome() {
-        return sobrenome;
+    public String getEmail() {
+        return email;
     }
-    public void setSobrenome(String sobrenome) {
-        this.sobrenome = sobrenome;
+    public void setEmail(String email) {
+        this.email = email;
     }
-    public String getCategoria() {
-        return categoria;
+    public String getSenha() {
+        return senha;
     }
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
     public long getId() {
         return id;
@@ -37,5 +37,4 @@ public class Profissional {
 
 
 }
-
 

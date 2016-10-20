@@ -5,35 +5,19 @@ package les.projeto.quebra_galho;
  */
 import java.util.List;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.ImageView;
+import android.app.ListActivity;
 
-import les.projeto.quebra_galho.view.EscolherClienteProfissional;
-import les.projeto.quebra_galho.view.ListaServicosActivity;
-import les.projeto.quebra_galho.view.MainActivity;
-
-public class ListProfissionalActivity extends AppCompatActivity {
+public class ListProfissionalActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_profissional);
+        //setContentView(R.layout.activity_list_profissional);
 
-        final ImageView telaProfissionais = (ImageView) findViewById(R.id.telaProfissionais);
+        BD bd = new BD(this);
 
-
-        telaProfissionais.setOnClickListener(new View.OnClickListener() {
-
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ListProfissionalActivity.this, ChatFake.class);
-                startActivity(intent);
-
-            }
-        });
+        List<Profissional> list = bd.buscar();
+        setListAdapter(new ProfissionalAdapter(this, list));
     }
 }

@@ -23,8 +23,8 @@ public class BD {
     public void inserir(Profissional profissional){
         ContentValues valores = new ContentValues();
         valores.put("nome", profissional.getNome());
-        valores.put("sobrenome", profissional.getSobrenome());
-        valores.put("categoria", profissional.getCategoria());
+        valores.put("email", profissional.getEmail());
+        valores.put("senha", profissional.getSenha());
 
         bd.insert("profissional", null, valores);
     }
@@ -33,7 +33,9 @@ public class BD {
     public void atualizar(Profissional profissional){
         ContentValues valores = new ContentValues();
         valores.put("nome", profissional.getNome());
-        valores.put("sobrenome", profissional.getSobrenome());
+        valores.put("email", profissional.getEmail());
+        valores.put("senha", profissional.getSenha());
+
 
         bd.update("profissional", valores, "_id = ?", new String[]{""+profissional.getId()});
     }
@@ -46,7 +48,7 @@ public class BD {
 
     public List<Profissional> buscar(){
         List<Profissional> list = new ArrayList<Profissional>();
-        String[] colunas = new String[]{"_id", "nome", "sobrenome"};
+        String[] colunas = new String[]{"_id", "nome", "email", "senha"};
 
         Cursor cursor = bd.query("profissional", colunas, null, null, null, null, "nome ASC");
 
@@ -58,7 +60,8 @@ public class BD {
                 Profissional p = new Profissional();
                 p.setId(cursor.getLong(0));
                 p.setNome(cursor.getString(1));
-                p.setSobrenome(cursor.getString(2));
+                p.setEmail(cursor.getString(2));
+                p.setSenha(cursor.getString(3));
                 list.add(p);
 
             }while(cursor.moveToNext());
@@ -67,5 +70,3 @@ public class BD {
         return(list);
     }
 }
-
-

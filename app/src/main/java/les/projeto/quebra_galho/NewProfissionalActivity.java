@@ -14,8 +14,8 @@ import android.widget.Toast;
 public class NewProfissionalActivity extends Activity {
     private Profissional profissional = new Profissional();
     private EditText nomeEt;
-    private EditText sobrenomeEt;
-    private EditText categoriaEt;
+    private EditText emailEt;
+    private EditText senhaEt;
     private Button salvarBt;
     private Button editarBt;
 
@@ -26,8 +26,8 @@ public class NewProfissionalActivity extends Activity {
         setContentView(R.layout.activity_new_profissional);
 
         nomeEt = (EditText) findViewById(R.id.nome);
-        sobrenomeEt = (EditText) findViewById(R.id.sobrenome);
-        categoriaEt = (EditText) findViewById(R.id.categoria);
+        emailEt = (EditText) findViewById(R.id.email);
+        senhaEt = (EditText) findViewById(R.id.senha);
         salvarBt = (Button) findViewById(R.id.button1);
         editarBt = (Button) findViewById(R.id.button2);
 
@@ -39,12 +39,14 @@ public class NewProfissionalActivity extends Activity {
 
                 profissional.setId(bundle.getLong("id"));
                 profissional.setNome(bundle.getString("nome"));
-                profissional.setSobrenome(bundle.getString("sobrenome"));
+                profissional.setEmail(bundle.getString("email"));
+                profissional.setSenha(bundle.getString("senha"));
+
 
                 nomeEt.setText(profissional.getNome());
-                sobrenomeEt.setText(profissional.getSobrenome());
+                emailEt.setText(profissional.getEmail());
+                senhaEt.setText(profissional.getSenha());
 
-                categoriaEt.setVisibility(View.GONE);
                 salvarBt.setVisibility(View.GONE);
                 editarBt.setVisibility(View.VISIBLE);
             }
@@ -54,26 +56,26 @@ public class NewProfissionalActivity extends Activity {
 
     public void salvarProfissional(View view){
         profissional.setNome(nomeEt.getText().toString());
-        profissional.setSobrenome(sobrenomeEt.getText().toString());
-        profissional.setCategoria(categoriaEt.getText().toString());
+        profissional.setEmail(emailEt.getText().toString());
+        profissional.setSenha(senhaEt.getText().toString());
 
         BD bd = new BD(this);
         bd.inserir(profissional);
 
-        Toast.makeText(this, "Profissional inserido com sucesso!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "profissional inserido com sucesso!", Toast.LENGTH_SHORT).show();
     }
 
 
     public void editarProfissional(View view){
         profissional.setNome(nomeEt.getText().toString());
-        profissional.setSobrenome(sobrenomeEt.getText().toString());
+        profissional.setEmail(emailEt.getText().toString());
+        profissional.setSenha(senhaEt.getText().toString());
+
 
         BD bd = new BD(this);
         bd.atualizar(profissional);
 
-        Toast.makeText(this, "telachatprovisoria \""+profissional.getNome()+"\" atuailizado com sucesso.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "profissional \""+profissional.getNome()+"\" atuailizado com sucesso.", Toast.LENGTH_SHORT).show();
     }
 
 }
-
-

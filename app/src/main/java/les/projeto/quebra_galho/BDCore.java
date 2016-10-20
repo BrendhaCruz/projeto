@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class BDCore extends SQLiteOpenHelper {
     private static final String NOME_BD = "testeBD";
-    private static final int VERSAO_BD = 2;
+    private static final int VERSAO_BD = 10;
 
 
     public BDCore(Context ctx){
@@ -19,7 +19,7 @@ public class BDCore extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase bd) {
-        bd.execSQL("create table profissional(_id integer primary key autoincrement, nome text not null, sobrenome text not null, categoria text not null);");
+        bd.execSQL("create table profissional(_id integer primary key autoincrement, nome text not null, email text not null, senha text not null);");
     }
 
     @Override
@@ -29,4 +29,3 @@ public class BDCore extends SQLiteOpenHelper {
     }
 
 }
-
