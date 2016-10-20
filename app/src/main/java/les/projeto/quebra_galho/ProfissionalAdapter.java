@@ -42,6 +42,7 @@ public class ProfissionalAdapter extends BaseAdapter {
         return list.get(arg0).getId();
     }
 
+
     @Override
     public View getView(int position, View arg1, ViewGroup arg2) {
         final int auxPosition = position;
@@ -84,6 +85,15 @@ public class ProfissionalAdapter extends BaseAdapter {
                 bd.deletar(list.get(auxPosition));
 
                 layout.setVisibility(View.GONE);
+            }
+        });
+
+        Button btAvalia = (Button) layout.findViewById(R.id.btAvalia);
+        btAvalia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, AvaliacaoActivity.class);
+                context.startActivity(intent);
             }
         });
 

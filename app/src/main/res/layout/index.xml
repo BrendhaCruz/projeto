@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblAvalie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avaliar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:stepSize="1.0"
+        android:rating="2.0" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Avaliar"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAux"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Adicionar as strings ao arquivo string.xml. Omitido aqui! -->
+        <TextView
+            android:id="@+id/lblResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtValorAvaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

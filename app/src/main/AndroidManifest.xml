@@ -42,6 +42,7 @@
         </activity>
         <activity android:name=".MainProfissional" />
         <activity android:name=".ChatFake" />
+        <activity android:name=".AvaliacaoActivity" />
         <activity android:name=".view.ListaServicosActivity" />
         <activity
             android:name=".NewProfissionalActivity"
